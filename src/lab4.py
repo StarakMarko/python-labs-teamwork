@@ -4,13 +4,13 @@ class Park:
     def __init__(
         self,
         address="Franko street 1",
-        length=100,
+        length_of_bicycle_path=100,
         price=70,
         area=500,
         name="Stryiskyi",
     ):
         self.__address = address
-        self.__length = length
+        self.__length_of_bicycle_path = length_of_bicycle_path
         self.__price = price
 
         self.area = area
@@ -19,8 +19,8 @@ class Park:
     def get_address(self):
         return self.__address
 
-    def get_length(self):
-        return self.__length
+    def get_length_of_bicycle_path(self):
+        return self.__length_of_bicycle_path
 
     def get_price(self):
         return self.__price
@@ -34,7 +34,7 @@ class Park:
             f"  name = {self.name}\n"
             f"  address = {self.__address}\n"
             f"  price = {self.__price}\n"
-            f"  length = {self.__length}\n"
+            f"  length = {self.__length_of_bicycle_path}\n"
             f"  area = {self.area}"
         )
 
